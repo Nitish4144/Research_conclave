@@ -4,8 +4,8 @@ import json
 import numpy as np
 
 # --- Configuration ---
-# 1. The folder with your original JPGs (the 'wallpapers' folder)
-IMAGE_FOLDER_PATH = "ID_cards"
+# 1. The folder with your original JPGs 
+IMAGE_FOLDER_PATH = "Research_conclave\Dinner_checking\ID_cards"
 
 # 2. The map file you generated in the previous step
 MAP_FILE = "aruco_image_map.json"
@@ -168,7 +168,7 @@ def main():
 
 if __name__ == "__main__":
     if not os.path.exists(MAP_FILE) or not os.path.exists(IMAGE_FOLDER_PATH):
-        print("Error: Missing 'aruco_image_map.json' or 'wallpapers' folder.")
-        print("Please run the 'create_map.py' script first and ensure your 'wallpapers' folder exists.")
+        print("Error: Missing 'aruco_image_map.json' or 'ID_cards' folder.")
+        print("Please run the 'create_map.py' script first and ensure your 'ID_cards' folder exists.")
     else:
         main()
